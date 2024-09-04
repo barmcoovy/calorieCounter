@@ -1,0 +1,25 @@
+#loadingContainer{
+    display: none;
+}
+#loadingBar{
+    width: 400px;
+    background-color: white;
+    height: 15px;
+    border-radius: 15px;
+}
+#loadingBarValue{
+    background-color: green;
+    height: 15px;
+    border-radius: 15px;
+}
+.widthUp{
+    animation: widthUp 5s ease;
+}
+@keyframes widthUp{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 400px;
+    }
+}

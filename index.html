@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Counter</title>
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/loadingBar.css">
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div id="calorieCounterCard">
+        <span id="result">Your result is: </span>
+      <h2 class="item">Calorie Counter</h2>
+      <div class="item">
+        <label for="age">Age:</label>
+        <select name="age" id="age" required></select>
+      </div>
+      <div class="item">
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" checked />Male
+        <input type="radio" name="gender" id="female" />Female
+      </div>
+      <div class="item">
+        <label for="height">Height[cm]:</label>
+        <input type="number" name="height" id="height" min="1" value="170" />
+      </div>
+      <div class="item">
+        <label for="weight">Weight[kg]:</label>
+        <input type="number" name="weight" id="weight" min="1" value="70"/>
+      </div>
+      <div class="item">
+        <label for="activity">Activity:</label>
+        <select name="activity" id="activity">
+          <option value="1" selected>Sedentary: little or no exercise</option>
+          <option value="1.3">Light: exercise 1-3 days a week</option>
+          <option value="1.5">Moderate: exercise 3-5 days a week</option>
+          <option value="1.7">Very Active: exercise 6-7 days a week</option>
+          <option value="2">Extra Active: intense exercise daily</option>
+        </select>
+      </div>
+      <button id="calculateBtn" class="item">CALCULATE</button>
+    
+    </div>
+    <div id="loadingContainer">
+        <h3 id="loadingBarText">Loading...</h3>
+        <div id="loadingBar">
+            <div id="loadingBarValue"></div>
+        </div>
+    </div>
+    
+  </body>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/calculate.js"></script>
+</html>
