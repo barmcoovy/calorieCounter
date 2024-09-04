@@ -4,6 +4,6 @@
 To calculate PPM I used Harris–Benedict equation
 I used font from [Google Fonts](https://fonts.google.com/).
 
-If you want to to test it do it [here]
+If you want to to test it do it [here](https://barmcoovy.github.io/calorieCounter/)
 
 Enjoy ;)
